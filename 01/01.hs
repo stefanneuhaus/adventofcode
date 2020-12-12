@@ -11,7 +11,7 @@ sumsUpTo2020 :: [Int] -> Bool
 sumsUpTo2020 numbers = sum numbers == 2020
 
 productOfValuesSummingUpTo2020 :: [[Int]] -> Int
-productOfValuesSummingUpTo2020 values = product (head(filter sumsUpTo2020 values))
+productOfValuesSummingUpTo2020 values = product (head (filter sumsUpTo2020 values))
 
 
 main = do
