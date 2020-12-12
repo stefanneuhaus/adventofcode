@@ -1,6 +1,3 @@
-numbers :: String -> [Int]
-numbers numbersString = map read (lines numbersString)
-
 pairs :: [a] -> [[a]]
 pairs values = [[x,y] | x <- values, y <- values]
 
@@ -16,6 +13,6 @@ productOfValuesSummingUpTo2020 values = product (head (filter sumsUpTo2020 value
 
 main = do
   expensesReport <- readFile "./expense-report.txt"
-  let expenses = numbers expensesReport
+  let expenses = map read (lines expensesReport)
   print (productOfValuesSummingUpTo2020 (pairs expenses))
   print (productOfValuesSummingUpTo2020 (triples expenses))
