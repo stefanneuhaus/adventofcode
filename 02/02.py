@@ -2,12 +2,18 @@
 
 import re
 
-number_of_valid_passwords = 0
+number_of_valid_passwords_old = 0
+number_of_valid_passwords_new = 0
 
 with open("passwords.txt") as password_file:
     for line in password_file.read().splitlines():
-        lowest_number, highest_number, letter, password = re.split(r'[- :]+', line)
-        if int(lowest_number) <= password.count(letter) <= int(highest_number):
-            number_of_valid_passwords += 1
+        number1, number2, letter, password = re.split('[- :]+', line)
 
-print(number_of_valid_passwords)
+        if int(number1) <= password.count(letter) <= int(number2):
+            number_of_valid_passwords_old += 1
+
+        if (password[int(number1) - 1] == letter) != (password[int(number2) - 1] == letter):
+            number_of_valid_passwords_new += 1
+
+print(number_of_valid_passwords_old)
+print(number_of_valid_passwords_new)
