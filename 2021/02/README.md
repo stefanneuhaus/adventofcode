@@ -5,7 +5,8 @@ Run:
 lua navigate.lua
 ```
 
-The resulting answer then computes to:
+The resulting answers then compute to:
 ```
 2322630
+2105273490
 ```
