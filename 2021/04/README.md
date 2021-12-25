@@ -2,11 +2,11 @@
 
 Run:
 ```
-lua power-consumption.lua
+lua bingo.lua
 ```
 
-The resulting answers then compute to:
+The resulting winning scores then compute to:
 ```
 64084
-n.n.
+12833
 ```
