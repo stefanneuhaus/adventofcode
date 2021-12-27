@@ -14,7 +14,7 @@ function read_input(bingo_file)
     end
 
     file_handle = io.open(bingo_file)
-    io.input(bingo_file)
+    io.input(file_handle)
     local chosen_numbers = read_row()
 
     local boards = {}
