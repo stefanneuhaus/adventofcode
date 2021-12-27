@@ -7,3 +7,4 @@
 - Day [#03](03/): [Lua](https://www.lua.org/) again, that was fun! :smiley:
 - Day [#04](04/): [Lua](https://www.lua.org/) learning new features, code is still a mess :snail:
 - Day [#05](05/): [Lua](https://www.lua.org/) using classes/objects respectively _prototypes_ for the first time :smirk:
+- Day [#06](06/): [Lua](https://www.lua.org/) on the train back home after Christmas holidays ... :sleeping:
