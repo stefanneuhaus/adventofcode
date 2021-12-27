@@ -13,7 +13,7 @@ function read_input(bingo_file)
         return { read_row(), read_row(), read_row(), read_row(), read_row() }
     end
 
-    bingo_file = io.open(bingo_file)
+    file_handle = io.open(bingo_file)
     io.input(bingo_file)
     local chosen_numbers = read_row()
 
@@ -25,7 +25,7 @@ function read_input(bingo_file)
         end
     until not successful
 
-    io.close(bingo_file)
+    io.close(file_handle)
 
     return chosen_numbers, boards
 end
